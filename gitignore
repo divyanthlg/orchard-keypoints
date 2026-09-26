@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Virtual environment
+venv/
+orchard_keypoints_venv/
+.venv/
+
+# Trained model weights (large binary files -- don't commit to a normal
+# git repo; see the README section on this for options if you want them
+# version-controlled anyway)
+checkpoints/*.pt
+checkpoints/*.pth
+
+# Dataset (large, and likely not something you want in a public repo --
+# see README for how to share/document it separately if needed)
+orchard_images/
+orchard_keypoints.json
+
+# Generated outputs from running the scripts
+sanity_check_*.png
+debug_heatmap_*.png
+confidence_curve.png
+*_keypoints.png
+*_steps.png
+batch_results.csv
+*_results/
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/
+*.swp
